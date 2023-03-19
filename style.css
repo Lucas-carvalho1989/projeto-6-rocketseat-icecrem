@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  font-size: 62.5%;
+  --color-principal: #8e9aaf;
+  --color-secundary: #cbc0d3;
+  --color-terciaria: #ffffff;
+  --fs-footer: #4a4e69;
+  --font-family-footer: "Open Sans", sans-serif;
+  --font-family: "Roboto", sans-serif;
+  --font-family-: "Staatliches", cursive;
+}
+
+.pai {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+}
+.filho {
+  background-color: #4a4e69;
+  width: 30%;
+}
+.logo-container {
+  padding: 32px;
+  display: flex;
+  justify-content: center;
+}
+.filho-logo {
+  width: 214.47px;
+  height: 100%;
+}
+
+h1 {
+  padding: 19px;
+  text-align: center;
+  line-height: 34px;
+  font-family: var(--font-family-);
+  font-size: 48px;
+  font-weight: 400;
+  background: var(--color-secundary);
+  color: var(--color-terciaria);
+}
+.texto {
+  padding: 32px;
+  text-align: center;
+  line-height: 20px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--color-terciaria);
+}
+
+.image {
+  width: 100%;
+}
+
+section {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+
+.images-container {
+  padding: 64px 32px;
+  display: grid;
+  grid-template-columns: repeat(3, 23%);
+  justify-content: center;
+  gap: 16px;
+}
+
+.card-2,
+.card-4,
+.card-6 {
+  grid-row: span 2;
+}
+
+footer {
+  padding: 32px 46px 32px 32px;
+  display: flex;
+  margin-top: auto;
+  justify-content: center;
+}
+span {
+  font-family: var(--font-family-footer);
+  font-weight: 700;
+}
+
+@media (max-width: 700px) {
+  footer {
+    display: none;
+  }
+  .pai {
+    flex-direction: column;
+  }
+  section {
+    width: 100%;
+  }
+  .filho {
+    width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  footer {
+    display: none;
+  }
+  .pai {
+    flex-direction: column;
+  }
+  section {
+    width: 100%;
+  }
+  .filho {
+    width: 100%;
+  }
+  .filho-logo {
+    width: 128px;
+  }
+  h1 {
+    padding: 16px;
+    font-size: 24px;
+  }
+
+  .texto {
+    font-size: 14px;
+  }
+  .images-container {
+    padding-top: 32px;
+    grid-template-columns: repeat(3, 33%);
+    gap: 8px;
+  }
+}
